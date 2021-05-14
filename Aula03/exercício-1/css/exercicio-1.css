@@ -1,0 +1,22 @@
+body {
+    background: midnightblue;
+}
+
+div {
+    color: white;
+    font-size: xx-large;
+}
+
+div::before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid white;
+    border-left: 5px solid rgb(252, 252, 0);
+    background: white;
+}
+
+div::after {
+    content: " - Porto Alegre / RS";
+}
