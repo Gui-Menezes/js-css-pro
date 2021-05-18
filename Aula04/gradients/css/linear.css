@@ -1,0 +1,28 @@
+:root {
+    --cor-qualquer: #FF9900;
+    --colorido: linear-gradient(red, var(--color-qualquer));
+}
+
+html, body {
+    /* Aplicamos essa "regra" para não ocorrer a segmentação/repetição. */
+    height: 100%;
+    margin: 0;;
+}
+
+body {
+    /* Se aplicarmos o background direto no body, ocorre uma "segmentação/repetição" (efeito colateral). */
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+
+        /* background: linear-gradient(red, violet, purple, #0066CC, var(--cor-qualquer)); */
+        /* background: var(--colorido); */
+
+    background: linear-gradient(45deg, red 60%, yellow);
+
+    border-radius: 50%;
+}

@@ -1,0 +1,38 @@
+.container {
+    border: 3px solid purple;
+    width: 300px;
+    height: 200px;
+
+    /* position relative: cria um "cercado/limitador" à div .item */
+    position: relative;
+}
+
+.item {
+    border: 1px solid red;
+    width: 60px;
+    height: 60px;
+
+    /* position absolute: dá direito a configurar mais 4 propriedades: top, bottom, left e right */
+    position: absolute;
+
+}
+
+.filho-a {
+    background: greenyellow;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.filho-b {
+    background: green;
+    top: 20px;
+    right: 20px;
+}
+
+.filho-c {
+    background: orange;
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+}
