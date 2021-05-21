@@ -1,0 +1,24 @@
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+.rotaciona {
+    /* Pode usar deg ou turn (graus ou voltas) */
+   transform: rotate(45deg);
+}
+
+.escala {
+    /* Neste exemplo, aumentará em 10% o tamanho da DIV */
+    transform: scale(1.1)
+}
+
+.estica {
+    transform: skew(40deg, 10deg);
+}
+
+.move {
+    transform: translate(10px, 20px);
+}

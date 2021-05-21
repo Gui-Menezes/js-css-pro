@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.conteudo {
+    border: 1px solid orange;
+    width: 300px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #0066CC;
+
+    /* position: absolute; */
+
+    /* position fixed é muito parecido com o absolute, porém ele realmente é FIXO */
+    /* o elemento fica literalmente ENGESSADO na posição ordenada */
+    /* no caso do Footer, evita efeitos colaterais como um scroll indesejado */
+    /* no caso de uso de padding + wwidth: 100%; */
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+
+    text-align: center;
+    width: 100%;
+    color: white;
+}
