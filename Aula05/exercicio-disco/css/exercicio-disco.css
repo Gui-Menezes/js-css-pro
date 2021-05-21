@@ -14,6 +14,7 @@
     margin-left: 100px;
     margin-top: 7px;
     background: repeating-radial-gradient(circle at 50%, black, black 12px, grey, grey 15px);
+    transition: margin-left 2s;
 }
 
 .capa-disco:hover {
