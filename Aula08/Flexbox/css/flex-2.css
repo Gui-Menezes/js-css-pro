@@ -1,0 +1,28 @@
+body {
+    background: #002244;
+}
+
+.container {
+    border: 3px solid white;
+    width: 640px;
+    height: 480px;
+
+    display: flex;
+}
+
+.filho {
+    color: white;
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+
+    /* Habilita/desabilita o encolhimento automático do elemento: */
+    /* Existem dois valores: 1 (ligadO) e 0 (desligado). */
+    flex-shrink: 1;
+}
+
+.encolhe-mais {
+    /* Acima de 1, força o elemento a encolhar proporcionalmente
+    em relação aos irmãos e ao tamanho do pai. */
+    flex-shrink: 2;
+}

@@ -1,0 +1,36 @@
+body {
+    background: #002244;
+}
+
+.container {
+    border: 3px solid white;
+    width: 640px;
+    height: 480px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* Alinha os itens (filhos) entre seus eixos: */
+    align-items: center;
+    /* Alinha TODO o conteúdo do no eixo Y do "container pai" */
+    align-content: center;
+
+}
+
+.filho {
+    color: white;
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maior {
+    height: 170px;
+}
+
+.container:hover {
+    align-content: center;
+    align-items: unset;
+}

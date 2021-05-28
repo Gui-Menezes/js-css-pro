@@ -1,0 +1,23 @@
+body {
+    background: #002244;
+}
+
+.container {
+    border: 3px solid white;
+    /* width: 640px;
+    height: 480px; */
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filho {
+    color: white;
+    border: 2px solid yellow;
+    width: 100px;
+    height: 100px;
+
+    /* Ponto de partida para o tamanho do elemento;
+    E tem prioridade sobre o width (sendo maior ou menor). */
+    /* flex-basis: 200px; */
+}
