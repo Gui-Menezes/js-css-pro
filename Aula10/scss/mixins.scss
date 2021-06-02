@@ -1,0 +1,24 @@
+@mixin borda-redonda {
+    border-radius: 10px;
+}
+
+// Se passar um argumento (red), será utilizada essa definição, se não
+// for dado nenhum argumento no 'include' no container.scss (linha 29).
+
+// Quando um mixin necessita receber mais de um argumento,
+// precisamos passar os argumentos SEMPRE na ordem esperada.
+// Se quiser passar um argumento vazio, utiliza-se o valor: null.
+// Se quiser passar apenas UM dos argumentos, ou em uma ordem diferente da esperada,
+// deve-se passar os argumentos nomeados. Por exemplo: sobra($cor: green, $y: 12px, $x: 12px).
+@mixin sombra($x: 2px, $y: 2px, $cor: red) {
+    box-shadow: $x $y 2px 2px $cor;
+}
+
+@mixin botao-custom {
+    padding: 8px;
+    font-family: Arial;
+    border: 1px solid $branco;
+    box-shadow: none;
+
+    @content;
+}
