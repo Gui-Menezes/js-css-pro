@@ -9,7 +9,7 @@ body {
   justify-content: center; }
   body .container {
     width: 640px;
-    height: 480px;
+    height: 800px;
     border: 2px solid white;
     border-radius: 10px;
     display: flex;
@@ -26,7 +26,18 @@ body {
       background-size: contain;
       margin-bottom: 20px;
       border-radius: 10px;
-      box-shadow: 14px 14px 2px 2px green; }
+      box-shadow: 2px 14px 2px 2px green; }
+      @media screen and (max-width: 700px) {
+        body .container .foto {
+          border-radius: 50%;
+          border: 3px dotted white; }
+          body .container .foto else {
+            border-radius: 0; } }
+      @media screen and (max-width: 500px) {
+        body .container .foto {
+          border: 6px dashed yellow; }
+          body .container .foto else {
+            border-radius: 0; } }
     body .container button {
       background: orange;
       padding: 8px;
@@ -47,6 +58,23 @@ body {
         font-weight: bold; }
       body .container p.local {
         font-style: italic; }
+  body .item-red {
+    background: red; }
+  body .item-orange {
+    background: orange; }
+  body .item-purple {
+    background: purple; }
+  body .item-brown {
+    background: brown; }
+  body li:nth-child(1) {
+    background: red;
+    color: white; }
+  body li:nth-child(2) {
+    background: red;
+    color: white; }
+  body li:nth-child(3) {
+    background: red;
+    color: white; }
   body footer {
     background: orange;
     position: fixed;

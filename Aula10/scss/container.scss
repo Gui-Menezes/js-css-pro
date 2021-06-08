@@ -1,6 +1,6 @@
 .container {
     width: 640px;
-    height: 480px;
+    height: 800px;
     border: 2px solid white;
 
     @include borda-redonda();
@@ -26,8 +26,18 @@
         margin-bottom: 20px;
 
         @include borda-redonda();
-        @include sombra(14px, 14px, green);
+        @include sombra($cor: green, $y: 14px);
+
+        @media screen and (max-width: 700px) {
+            @include bolinha-ou-quadrado($bolinha: true);
+            border: 3px dotted white;
+        }
+
+    @media screen and (max-width: 500px) {
+        @include bolinha-ou-quadrado();
+        border: 6px dashed yellow;
     }
+}
 
     button {
         background: $laranja;
@@ -56,5 +66,25 @@
         &.local {
             font-style: italic;
         }
+    }
+}
+
+
+// Lista em SASS (vetor):
+
+$cores: red, orange, purple, brown;
+
+@each $cor in $cores {
+    .item-#{$cor} {
+        background: $cor;
+    }
+}
+
+//  FOR: 
+
+@for $i from 1 through 3 {
+    li:nth-child(#{$i}) {
+        background: red;
+        color: $branco;
     }
 }
