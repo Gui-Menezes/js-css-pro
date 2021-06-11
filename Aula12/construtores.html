@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtores</title>
+</head>
+<body>
+    Construtores
+
+
+    <script>
+        var data = new Date();
+        var mes = data.getMonth();
+        console.log(mes);
+
+        // Construtor é o método que é executado no momento
+        // que instanciamos uma classe para um objeto.
+        var dtNascimento = new Date('1981-09-22');
+        var mesNascimento = dtNascimento.getMonth();
+        // Mês é um vetor. Portanto, o Janeiro será 0 e não 1.
+        // Para arrumar essa situação, soma-se 1 à variável.
+        console.log(mesNascimento + 1);
+
+    </script>
+</body>
+</html>

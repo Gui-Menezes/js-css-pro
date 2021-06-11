@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - JSON</title>
+</head>
+<body>
+
+    <p id="nome"></p>
+    <p id="preco"></p>
+    <p id="marca"></p>
+
+    <script>
+        var produto = {
+            nome: "Televisão",
+            preco: 1599.66,
+            marca: "LG"
+        };
+
+        // EXERCÍCIO: Seguindo a estrutura JSON acima, implemente um HTML VAZIO e
+        // popule os elementos com os dados do JSON.
+        // DICA: document.getElementById.
+
+        // Pode-se criar uma variável para reutilização do "document.getElementById"
+        var nome = document.getElementById('nome');
+        nome.innerHTML = produto.nome;
+
+        document.getElementById('preco').innerHTML = 'R$ ' + produto.preco;
+
+        document.getElementById('marca').innerHTML = produto.marca;
+
+
+    </script>
+</body>
+</html>
