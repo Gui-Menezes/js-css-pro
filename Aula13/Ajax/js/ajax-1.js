@@ -5,9 +5,21 @@
     // Na volta, chama: callback:
     httpRequest.onload = mostraDados;
 
+    // Incluir o onloadstart ANTES do .open e .send.
+    httpRequest.onloadstart = mostraLoader;
+
     httpRequest.open('GET', arquivo, true);
     httpRequest.send(null);
 }
+
+function mostraLoader () {
+    var lista = document.getElementById('lista');
+    // Pode ser incluída uma imagem <img> no lugar do texto.
+    // Pode ser incluído código HTML (<div class="loader"</div) e estilizar via CSS.
+    lista.innerHTML = 'Carregando...';
+}
+
+
 
 function mostraDados() {
     var lista = document.getElementById('lista');
