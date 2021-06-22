@@ -1,4 +1,4 @@
-    function carregaDados (arquivo) {
+function carregaDados (arquivo) {
 
     var httpRequest = new XMLHttpRequest();
 
