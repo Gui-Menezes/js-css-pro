@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map, Filter e Reduce</title>
+</head>
+<body>
+    <h1>Map, Filter e Reduce</h1>
+
+
+    <script>
+
+// ------------------ MAP -----------------------------
+        const carros = ['Ford', 'Fiat', 'Honda'];
+
+        const listaCarros = carros.map( item => {
+            console.log(item);
+            return `Carro ${item}`
+        })
+
+        console.log(carros);
+        console.log(listaCarros);
+
+        const numero = [2, 4, 6, 8, 10, 14, 16];
+
+        const numerosX3 = numero.map ( item => item*3);
+        console.log(numerosX3);
+
+
+        const aulas = [
+            {
+                nome: 'html 1',
+                tempo: 60
+            },
+            {
+                nome: 'html 2',
+                tempo: 85
+            },
+            {
+                nome: 'CSS 1',
+                tempo: 1000
+            },
+            {
+                nome: 'CSS 2',
+                tempo: 58
+            },
+            {
+                nome: 'JS 1',
+                tempo: 180
+            },
+            {
+                nome: 'JS 2',
+                tempo: 5
+            },
+            {
+                nome: 'JS 3',
+                tempo: 20
+            }
+        ]
+
+        const tempoDeAula = aulas.map(aula => aula.tempo);
+
+        console.log(tempoDeAula);
+// --------------------------------------------------------------------
+
+// ---------------------- FILTER ---------------------------
+
+const frutas = ['banana', undefined, null, '', 'uva', 0,'maçã'];
+
+const arrayLimpa = frutas.filter(frutas => {
+    return frutas
+});
+console.log(arrayLimpa);
+
+const arrayLimpa2 = frutas.filter(frutas => frutas === 'banana');
+console.log(arrayLimpa2);
+
+const numeros = [2, 4, 6, 8, 10, 14, 16];
+
+const buscaMaior = numero.filter(numero => numero > 10);
+console.log(buscaMaior);
+
+const filtraAulas = aulas.filter(aulas => aulas.tempo > 58);
+console.log(filtraAulas);
+
+
+
+
+
+
+
+// ------------------------------------------------------------
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+html, body {
+    /* vh / vw: Viewport height / Viewport width */
+    height: 100vh;
+    background-color: #0a3c49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-height: 400px) {
+    html, body {
+        height: auto;
+    }
+    .container {
+        margin-top: 20px;
+    }
+
+}
+
+.container {
+    width: 350px;
+    height: 200px;
+    background-color: rgba(245, 245, 245, 0.897);
+    border-radius: 10px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button {
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    color: white;
+    background-color: #0a3c49;
+}
+
+div.container input {
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    margin-top: 10px;
+}

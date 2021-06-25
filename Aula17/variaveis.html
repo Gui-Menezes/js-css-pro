@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <h1>Variáveis</h1>
+
+
+    <script>
+
+        // var: não respeita escopo.
+        // Pode-se "pegar" eessa variável de qualqure lugar do código.
+        // {
+        //     var carro = "carro bonito";
+        // }
+
+        // for (var i = 0; i <5; i++){
+        //     console.log(i);
+        // }
+        // i = 300;
+        // console.log(i);
+
+        // console.log(carro);
+
+        // let
+        // {
+        //     var carro = "carro bonito";
+        //     let carrinho = "estranho";
+        // }
+
+        // let carrinho = "normal";
+        // console.log(carrinho);
+
+        // for (let i = 0; i <5; i++) {
+        //     console.log(i);
+        // }
+        // i = 300;
+        // console.log(i);
+        // console.log(carro);
+
+        // const: não vaza escopo.
+        // {
+        //     const carro2 = "carro";
+        // }
+
+        // console.log(carro2);
+
+        // for (let i = 0; i <5; i++) {
+        //     console.log(i);
+        // }
+        // i = 300;
+        // console.log(i);
+        // console.log(carro);
+
+        // Arrow Function:
+
+        const variavel = (value1, value2) => {
+            return value1 + value2;
+        }
+
+        console.log(variavel(5, 10));
+
+
+
+    </script>
+</body>
+</html>
