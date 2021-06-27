@@ -11,30 +11,32 @@
 <html>
 <body>
 
-<div class="nav-bar">
-	<div class="esquerda">LOGO</div>
-	
+<nav>
+	<div class="esquerda">
+		<div class="logo">LOGO</div>
+	</div>
 	<div class="direita">
 		<div class="filmes">Filmes</div>
 		<div class="mais">Mais</div>
 	</div>
-</div>
-
+</nav>
 
 <div class="container">
 	<div class="conteudo">
-		<div class="conteudo2">
-			<p>Buscar filmes</p>
-			<div class="search">
-				<input type="text" name="nome-filmes" id="nome-filmes" placeholder="Digite o nome do filme...">
-				<button type="submit" id="buscar">
-					<img src="img/lupabranca.png">
-				</button>
-				<div class="info-filmes"></div>
-			</div>
+		<div class="texto">Buscar filmes</div>
+		<div class="busca-botao">
+			<input class="busca" placeholder="Digite o nome original do filme...">
+			<button type="button" class="botao">
+				<img src="img/lupabranca.png" alt="lupa" class="img-lupa">
+			</button>
+		</div>
+		<div class="info-filmes">
+			<div class="poster"></div>
+			<div class="infos"></div>
 		</div>
 	</div>
 </div>
 
+<script src="js/busca-filmes.js"></script>
 </body>
 </html>
