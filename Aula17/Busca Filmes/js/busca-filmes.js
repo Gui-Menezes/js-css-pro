@@ -1,11 +1,10 @@
+const mostraFilme = document.querySelector('.botao');
 
-var mostraFilme = document.querySelector('.botao');
-
-var chamada = new XMLHttpRequest();
+const chamada = new XMLHttpRequest();
 
 mostraFilme.addEventListener('click', function (event) {
     event.preventDefault();
-    let valorBusca = document.querySelector('.busca').value;
+    const valorBusca = document.querySelector('.busca').value;
     const url = `http://www.omdbapi.com/?t=${valorBusca}&apikey=994f918b`;
     buscaFilme(url);
 });
@@ -25,18 +24,20 @@ function buscaFilme(url) {
 // --------------------------------
 
 function mostraArray(array) {
-    let poster = array.Poster;
-    let titulo = array.Title;
-    let descricao = array.Plot;
-    let duracao = array.Runtime;
-    let genero = array.Genre;
-    let nota = array.imdbRating;
-    let saidaPoster = `<img src="${poster}" alt="${titulo}"/>`
-    let saidaInfos = `<div class="titulo">${titulo}</div>
-    <div class="descricao">${descricao}.</div>
-    <div class="duracao">Duração: ${duracao}</div>
-    <div class="genero">Gênero: ${genero}</div>
-    <div class="nota">Nota: ${nota}</div>`
+
+    const {Poster, Title, Plot, Runtime, Genre, imdbRating} = array;
+    // let poster = array.Poster;
+    // let titulo = array.Title;
+    // let descricao = array.Plot;
+    // let duracao = array.Runtime;
+    // let genero = array.Genre;
+    // let nota = array.imdbRating;
+    let saidaPoster = `<img src="${Poster}" alt="${Title}"/>`
+    let saidaInfos = `<div class="titulo">${Title}</div>
+    <div class="descricao">${Plot}.</div>
+    <div class="duracao">Duração: ${Runtime}</div>
+    <div class="genero">Gênero: ${Genre}</div>
+    <div class="nota">Nota: ${imdbRating}</div>`
 
     // saida = '<div class="poster"><img src="' + array.Poster + '" alt="' + array.Title + '"</div>'
 
