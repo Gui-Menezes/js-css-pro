@@ -28,27 +28,6 @@ const buscaInfos = (url) => {
 };
 // -------------
 
-function mostraArrayInfos(response) {
-    console.log(response);
-    let saidaInfos = '';
-
-    for(let i = 0; i < response.length; i++) {
-        const {Plot, Runtime, Genre, imdbRating} = response[i];
-
-        saidaInfos = `<p class="ano">${Plot}.</p>
-        <div class="mediaCard">
-            <img src="${Poster}" alt="${Title}
-        </div>
-        <div class="bottomCard">
-            <p class="genero">Gênero: ${Genre}</p>
-            <p class="duracao">Duração: ${Runtime}</p>
-            <p class="nota">Nota: ${imdbRating}</p>
-        </div>`
-
-        document.querySelector('.card').innerHTML = saidaInfos;
-    }
-}
-
 function mostraArray(resposta) {
     console.log(resposta);
 
@@ -61,12 +40,19 @@ function mostraArray(resposta) {
         <div class="card">
             <div class="topCard">
                 <h2 class="titulo">${Title}</h2>
+                <p class="ano">${Plot}.</p>
+        <div class="mediaCard">
+            <img src="${Poster}" alt="${Title}
+        </div>
+        <div class="bottomCard">
+            <p class="genero">Gênero: ${Genre}</p>
+            <p class="duracao">Duração: ${Runtime}</p>
+            <p class="nota">Nota: ${imdbRating}</p>
+        </div>
             </div>
         </div>
     </div>`
 
         document.querySelector('.info-filmes').innerHTML = saida;
-
     }
-
 }
